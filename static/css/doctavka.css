@@ -1,0 +1,172 @@
+
+* {
+        margin: 0;
+        padding: 0;
+        }
+        body, html {
+        width: 100%;
+        height: 100%;
+        background: #201D11;
+        }
+    
+    header {
+    height: 75px;
+    flex-shrink: 0;
+    background: #D5D5D5;
+    
+    
+    
+    }
+    
+    .logo {
+    width: 105px;
+    height: 5px;
+    flex-shrink: 0;
+    color: #000;
+    /* position: fixed; */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* cursor: pointer; */
+    
+    }
+    .dropdown a{
+        background:#D5D5D5;
+        color: #000000;
+            text-align: center;
+            /* Шрифт */
+            font-family: inherit;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300px;
+            line-height: normal;
+            text-decoration-line: underline;
+            padding-top: 0%;
+    }
+    .menu {
+       
+        display: flex;
+        justify-content: space-between;
+        padding-left: 240px;
+    }
+    .menu .menu_item {
+            margin: 0;
+    }
+    
+    .menu_link {
+            color: #000000;
+            text-align: center;
+            /* Шрифт */
+            font-family: inherit;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300px;
+            line-height: normal;
+            text-decoration-line: underline;
+        
+        
+    }
+    .button {
+        width: 75px;
+        height: 41px;
+        flex-shrink: 0;
+        float: right;
+        background: #201D1fcb;
+        border-radius: 15px;
+    }
+    .button a{
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+    
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: normal;
+    }
+
+.about{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: url("./img/фон2.svg");
+        height: 790px;
+        flex-shrink: 0;
+        
+}
+.dostavka{
+        width: 220px;
+        height: 60px;
+        flex-shrink: 0;
+        fill: #D8D5C3; 
+        border-radius: 15px; 
+}
+.dostavka a{
+        color: #000;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+font-style: italic;
+font-weight: 600;
+line-height: normal;
+}
+.nav{
+background: #d5d5d591;
+height: 24px;
+}
+.breadcrumb a {
+        padding-left: 10px;
+color: #000000;
+text-align: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 15px;
+font-style:oblique;
+line-height:normal;
+}
+.col-md-4 {
+        text-align:start;
+        width: 300px;
+        height: 200px;
+        transform: rotate(1.579deg);
+        flex-shrink: 0;
+        padding-top: 90px; 
+}
+.about li{
+        padding-top: 15px;
+        text-align:inherit;
+        color: #ffffff;
+        font-family:'Lora', serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;       
+}
+
+
+.faq {
+    margin: 0px;
+    height: 160px;
+    flex-shrink: 0;
+    background: #D5D5D5;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.faq h3{
+        font-size: 32px;
+        font-style:normal;
+}
+.faq img{
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        margin: 25px 0px 0px 0px;
+}

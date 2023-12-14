@@ -1,0 +1,62 @@
+{%extends 'users/base.html' %}
+{%load static%}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/registration.css'%}">
+{% endblock %}
+
+{% block content %}
+{% if form.errors %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert"
+                             style="margin-top: 50px;width: 400px; margin-left: 500px">
+                            {{ form.errors }}
+                        </div>
+                    {% endif %}
+
+<header>
+    <form action="{% url 'users:reg' %}" method="post">
+        {% csrf_token %}
+        <div class="close">
+        <a href="{% url 'index' %}">Отменить</a>
+      </div>
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col-2">
+                <img src="{% static 'img/pngwing 1.svg' %}" alt="Вход">
+              </div>
+              <div class="col-10">
+                <p>
+                    Регистрация
+                </p>
+              </div>
+            </div>
+            </div>
+          <div class="login">
+            {{ form.first_name }}<br>
+              <br>
+            {{ form.last_name }}<br>
+            <br>
+            {{ form.username }}<br>
+            <br>
+            {{ form.email }}<br>
+
+              <label id="pas1">Пароль</label>
+            {{ form.password1 }}<br>
+
+              <label id="pas2">Повторите пароль</label>
+            {{ form.password2 }}<br>
+            <br>
+              <div class="form-group "  style="padding-top: 15px;">
+                <input class="btn btn-primary" type="submit" value="Зарегистрироваться">
+
+                       </div>
+            <div class="regisrt">
+
+            <a href="{% url 'users:login' %}">Есть аккаунт?Войти</a>
+            </div>
+
+    </div>
+    </form>
+
+    </header>
+{% endblock %}
