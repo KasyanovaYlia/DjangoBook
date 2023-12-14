@@ -1,0 +1,127 @@
+{%extends 'products/base.html' %}
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/index.css'%}">
+{% endblock %}
+
+{% block content %}
+       <div class="main">
+            <label>
+              "Читай-Ка" - это просторный и уютный магазин, специализирующийся на книгах различных жанров и направлений литературы. <br>
+              <li> У нас каждый книголюб найдет что-то по своему вкусу и получит УДОВОЛЬСТВИЕ от посещения магазина.</li>
+              <li> У нас работают истинные книжные ЭКСПЕРТЫ, которые всегда готовы помочь вам выбрать и подобрать книги, учитывая ваши предпочтения и интересы.</li>
+              <li>
+                Мы также предлагаем УДОБНЫЙ сервис доставки, чтобы наши клиенты могли получать книги в любом удобном для них месте. </li>
+            </label>
+
+              <p class="main_item"><a href="#" class="main_link">Доставка</a></p>
+              <h1> Посетите наш магазин и окунитесь <br> в мир слов и фантазии!</h1>
+
+        </div>
+<button type="button" id="add"> <a href="{% url 'add' %}">Добавить</a></button>
+<div class="now">
+  <h5>Новинки</h5>
+</div>
+<div class="containers">
+<div class="container">
+    <div class="product">
+      <a href="#" class="image">
+      <img
+      src="{% static 'img/товар6.jpg' %}" alt="Товар"
+      />
+    </a>
+       <h2>Сказка о снежной принцессе</h2>
+    </a>
+  </div>
+</div>
+<div class="container">
+    <div class="product">
+        <a href="#" class="image">
+      <img
+      src="{% static 'img/товар7.jpg' %}" alt="Товар"
+      />
+    </a>
+        <h2>Дневник служанки</h2>
+    </a>
+  </div>
+</div>
+<div class="container">
+   <div class="product">
+       <a href="#" class="image">
+      <img
+      src="{% static 'img/товар8.jpg' %}" alt="Товар"
+      />
+    </a>
+        <h2>Первые чувства Искры снега</h2>
+    </a>
+  </div>
+</div>
+<div class="container">
+   <div class="product">
+        <a href="#" class="image">
+      <img
+      src="{% static 'img/товар9.jpg' %}" alt="Товар"
+      />
+    </a>
+       <h2>Ночь перед Рождеством</h2>
+    </a>
+  </div>
+</div>
+<div>
+  <button class="all"><a href="{% url 'products:index' %}">Показать все</a></button>
+</div>
+</div>
+    </div>
+        <div class="buy">
+            <h5>Скоро в продаже</h5>
+     </div>
+     <div class="containers">
+      <div class="container">
+          <div class="product">
+            <a href="#" class="image">
+            <img
+            src="{% static 'img/товар1.jpg' %}" alt="Товар"
+            />
+          </a>
+             <h2>Голодные игры</h2>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+          <div class="product">
+              <a href="#" class="image">
+            <img
+            src="{% static 'img/товар2.jpg' %}" alt="Товар"
+            />
+          </a>
+              <h2>Дюна</h2>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+         <div class="product">
+             <a href="#" class="image">
+            <img
+            src="{% static 'img/товар3.jpg' %}" alt="Товар"
+            />
+          </a>
+              <h2>7футов под Килием</h2>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+         <div class="product">
+              <a href="#" class="image">
+            <img
+            src="{% static 'img/товар4.jpg' %}" alt="Товар"
+            />
+          </a>
+             <h2>Ночь Королей Сражайся за свое сердце</h2>
+          </a>
+        </div>
+      </div>
+      </div>
+          </div>
+{% endblock%}
+
